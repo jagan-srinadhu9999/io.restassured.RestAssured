@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "type": "integer"
+    },
+    "frst_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "Mobile": {
+      "type": "string"
+    },
+    "marks": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "telugu": {
+              "type": "integer"
+            },
+            "english": {
+              "type": "integer"
+            },
+            "maths": {
+              "type": "integer"
+            },
+            "scinence": {
+              "type": "integer"
+            },
+            "social": {
+              "type": "integer"
+            },
+            "hindi": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "telugu",
+            "english",
+            "maths",
+            "scinence",
+            "social",
+            "hindi"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "E.D": {
+              "type": "integer"
+            },
+            "K.O.M": {
+              "type": "integer"
+            },
+            "TE1": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "E.D",
+            "K.O.M",
+            "TE1"
+          ]
+        }
+      ]
+    },
+    "subjects": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "favfood": {
+      "type": "object",
+      "properties": {
+        "breakfast": {
+          "type": "string"
+        },
+        "lunch": {
+          "type": "string"
+        },
+        "dinner": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    }
+  },
+  "required": [
+    "Id",
+    "frst_name",
+    "last_name",
+    "email",
+    "Mobile",
+    "marks",
+    "subjects",
+    "favfood"
+  ]
+}

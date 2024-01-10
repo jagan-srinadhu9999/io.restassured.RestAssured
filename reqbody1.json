@@ -1,0 +1,23 @@
+{
+    "id": 89,
+    "first_Name": "fname",
+    "last_Nmae": "lname",
+    "work": "job",
+    "email": "jagansrinadhu8@gmail.com",
+    "mobile": "phonenumber",
+    "author": "typicode",
+    "jobs" : [
+		
+		"tester",
+		"trainer"
+	],
+	"favFoods" : {
+		"launch" : "rice",
+		"breakfast" : "idly",
+		"dinner" :[
+			"chapathi",
+			"milk"
+		]
+		
+	}
+  }
